@@ -1,0 +1,46 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Standard Chartered Bank ",
+      "nameType": "Sell",
+      "quantity": "100",
+      "price": "10000",
+      "date": "2021-01-01"
+    },
+    {
+      "id": 7,
+      "name": "NIC ASIA Bank ",
+      "nameType": "Buy",
+      "quantity": "100",
+      "price": "10000",
+      "sold": "30000",
+      "curent": "555000",
+      "over": "666000",
+      "date": "2020-01-19"
+    },
+    {
+      "name": "Nepal Investment Bank",
+      "nameType": "Sell",
+      "quantity": "100",
+      "price": "10000",
+      "sold": "30000",
+      "curent": "555000",
+      "over": "666000",
+      "date": "2025-07-09",
+      "id": 12
+    },
+    {
+      "name": "Nabil Bank ",
+      "nameType": "Buy",
+      "quantity": "50",
+      "price": "10000",
+      "sold": "30000",
+      "curent": "555000",
+      "over": "666000",
+      "date": "2020-01-01",
+      "": "buy",
+      "id": 13
+    }
+  ]
+}

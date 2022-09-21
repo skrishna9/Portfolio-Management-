@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import ListItem from './components/pages/ListItem';
+import Navbar from './components/layout/Navbar';
+import {BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import NotFound from './components/pages/NotFound';
+import AddStocks from './components/users/AddStocks';
+import EditUser from './components/users/Edituser';
+import View from './components/users/View';
+// import Switch from "react-switch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+     <div className="App">
+
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={ListItem} />
+        <Route exact path='/addstocks' component={AddStocks} />
+        <Route exact path='/stock/edit/:id' component={EditUser} />
+        <Route exact path='/View/edit/:id' component={View} />
+        <Route  component={NotFound} />
+      </Switch>
     </div>
+   </Router>
   );
 }
 
